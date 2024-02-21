@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; /* Set position to fixed */
+  top: 0; /* Position at the top of the viewport */
+  left: 0; /* Align to the left side of the viewport */
+  z-index: 1;
+}
+.left {
+  margin-left: 10rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: larger;
+}
+ul li {
+  margin-right: 40px;
+  /* Adjust as needed */
+}
+ul li:last-child {
+  margin-right: 100px; /* Remove margin for the last item */
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.logo::first-letter {
+  color: #9747ff;
+}
+
+.syn {
+  position: absolute;
+  top: 1rem;
+  left: 10rem;
+  height: 100%;
+}
+.bgm {
+  position: relative;
+  height: 100%;
+}
+
+.txt {
+  font-size: 10rem;
+  position: absolute;
+  left: 10rem;
+  top: 8rem;
+  right: 0px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
+}
+.des {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  font-size: 50px;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 3px;
+}
+.dev {
+  position: absolute;
+  top: 160px;
+  left: 900px;
+  font-size: 50px;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 3px;
+}
+
+.exp {
+  width: 100%;
+  height: 51rem;
+  background-image: url("bgexp.png");
+  background-position: center;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.ep {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+}
+
+.expcont {
+  width: 90%;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.e1,
+.e2,
+.e3 {
+  width: 90%;
+  height: 15rem;
+}
+.e1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.box1 {
+  width: 40%;
+  height: 13rem;
+  border-radius: 50px;
+  background-color: #b47aff;
+  box-shadow: 5px 5px #000000a5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: large;
+}
+.one {
+  width: 80%;
+  height: 5rem;
+  font-size: x-large;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 30px;
+}
+.two {
+  width: 80%;
+  height: 2rem;
+  font-size: medium;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 30px;
+}
+
+.e2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.box2 {
+  width: 40%;
+  height: 13rem;
+  border-radius: 50px;
+  background-color: #b47aff;
+  box-shadow: 5px 5px #000000a5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: large;
+}
+.e3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.box3 {
+  width: 40%;
+  height: 13rem;
+  border-radius: 50px;
+  background-color: #b47aff;
+  box-shadow: 5px 5px #000000a5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: large;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  background-color: #9747ff;
+  transition: ease-in 0.1ms;
+  box-shadow: 8px 8px #000000a5;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff; /* color of the scrollbar track */
+}
+::-webkit-scrollbar-thumb {
+  background: #9747ff; /* color of the scrollbar handle */
+}
+::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+.contact {
+  width: 100%;
+  height: 48rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.contact img {
+  width: 30%;
+}
+.contact img:hover {
+  width: 35%;
+  transition: ease-in 0.1ms;
+}
+.social {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.git,
+.lin,
+.ig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.d1 {
+  width: 60%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-size: x-large;
+  font-family: "Montserrat", sans-serif;
+}
+.d2 {
+  width: 60%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-size: x-large;
+  font-family: "Montserrat", sans-serif;
+}
+.tq {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 10;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #9747ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.dil {
+  color: red;
+}
+
+.about {
+  width: 100%;
+  height: 60rem;
+  background-color: black;
+  position: relative;
+  top: -55px;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.c1,
+.c2 {
+  height: 20rem;
+  width: 85%;
+  font-family: "Montserrat", sans-serif;
+}
+.c2 {
+  width: 85%;
+}
+.c3 {
+  height: 4rem;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.c1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: xx-large;
+  font-weight: 100;
+}
+.c1 > h3 {
+  font-weight: 100;
+  font-size: smaller;
+}
+.chota {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+}
+.type {
+  color: #9747ff;
+  font-family: "Source Code Pro", monospace;
+}
+.c2 {
+  display: flex;
+}
+.edu {
+  width: 60%;
+  height: 20rem;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+.data > h4 {
+  font-size: large;
+  font-weight: 100;
+}
+.inf2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skl {
+  width: 40%;
+  height: 20rem;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.skl > h3 {
+  font-weight: 100;
+}
+
+.btn {
+  padding: 20px;
+  padding-inline: 50px;
+  background-color: #9747ff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px #ffffff;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #5818aa;
+}
